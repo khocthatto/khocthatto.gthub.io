@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Cửa Hàng ABC</title>
+    <link rel="stylesheet" href="n.css">
+</head>
+<body>
+    <!-- Phần đầu -->
+    <header>
+        <a href="trangchu.html" class="logo">
+    Mèo Công Nghệ
+    <img src="image/09.png" alt="Logo" class="logo-img">
+</a>
+
+        <nav>
+            <ul>
+                <li><a href="trangchu.html">Trang Chủ</a></li>
+                <li><a href="trangphu.html">Sản Phẩm</a></li>
+                <li><a href="giohang.html">Giỏ Hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Phần thân -->
+    <main class="cart-container">
+        <h1 class="page-title">Giỏ hàng của bạn</h1>
+        
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80" alt="Sản phẩm 1">
+                <div class="item-details">
+                    <h3>Sản phẩm 1</h3>
+                    <p class="price">200,000 VND</p>
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <button class="remove-item">Xóa</button>
+            </div>
+            
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/80" alt="Sản phẩm 2">
+                <div class="item-details">
+                    <h3>Sản phẩm 2</h3>
+                    <p class="price">350,000 VND</p>
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>2</span>
+                        <button>+</button>
+                    </div>
+                </div>
+                <button class="remove-item">Xóa</button>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <h2>Tổng cộng</h2>
+            <div class="summary-row">
+                <span>Tạm tính:</span>
+                <span>900,000 VND</span>
+            </div>
+            <div class="summary-row">
+                <span>Phí vận chuyển:</span>
+                <span>30,000 VND</span>
+            </div>
+            <div class="summary-row total">
+                <span>Tổng tiền:</span>
+                <span>930,000 VND</span>
+            </div>
+            <button class="checkout-btn">Thanh toán</button>
+        </div>
+        
+        <div class="checkout-form">
+            <h2>Thông tin thanh toán</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Phương thức thanh toán:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Chọn phương thức</option>
+                        <option value="cod">Thanh toán khi nhận hàng</option>
+                        <option value="bank">Chuyển khoản ngân hàng</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-order">Đặt hàng</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Phần cuối -->
+        <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về chúng tôi</h3>
+                <p>Mèo Công Nghệ chuyên cung cấp các sản phẩm công nghê chất lượng cao giá cả cắt cổ cho các con dân IT.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <p>Email: info@meocongnghe.com</p>
+                <p>Điện thoại: 0123 8888 888</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Mèo Công Nghệ.
+        </div>
+    </footer>
+</body>
+</html>
